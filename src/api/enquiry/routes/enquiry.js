@@ -6,4 +6,10 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::enquiry.enquiry');
+module.exports = createCoreRouter('api::enquiry.enquiry', {
+    config: {
+        create: {
+            auth: false
+        }
+    }
+});
