@@ -37,6 +37,9 @@
       "required": false,
       "allowedTypes": ["images", "files", "videos"]
     },
+    "publishedDate": {
+      "type": "string"
+    },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
